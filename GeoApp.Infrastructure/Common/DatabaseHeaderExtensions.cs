@@ -21,7 +21,7 @@ internal static class DatabaseHeaderExtensions
     public static DatabaseHeader ReadDatabaseHeader(this ReadOnlySpan<byte> header)
     {
         var version = MemoryMarshal.Read<int>(header.Slice(VersionFiledOffset, sizeof(int)));
-        var name = Encoding.ASCII.GetString(header.Slice(NameFiledOffset, NameFiledLength));
+        var name = Encoding.ASCII.GetString(header.Slice(NameFiledOffset, NameFiledLength).TrimNullBytes());
         var timestamp = MemoryMarshal.Read<ulong>(header.Slice(CreateAtFiledOffset, sizeof(ulong)));
         var records = MemoryMarshal.Read<int>(header.Slice(RecordCountFiledOffset, sizeof(int)));
         var rangesOffset = MemoryMarshal.Read<uint>(header.Slice(RangesArrayFiledOffset, sizeof(uint)));

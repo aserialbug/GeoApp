@@ -1,8 +1,8 @@
 ﻿namespace GeoApp.Infrastructure.Model;
 
-public readonly struct Range
+public struct Range
 {
-    public readonly int From;
-    public readonly int To;
-    public readonly int LocationIndex;
+    public readonly uint From;
+    public readonly uint To;
+    public readonly uint LocationIndex;
 }

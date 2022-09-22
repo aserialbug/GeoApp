@@ -5,7 +5,7 @@ namespace GeoApp.Infrastructure.Common;
 
 public static class CityExtensions
 {
-    public static ReadOnlySpan<byte> GetBytes(this City city)
+    public static ReadOnlySpan<byte> GetBytes(this string city)
     {
         // В итоге должен получиться массив байт длинной 20, который содержит
         // название города и дополнен до конаца нулевыми байтами 0x00

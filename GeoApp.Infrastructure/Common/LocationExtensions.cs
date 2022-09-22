@@ -4,7 +4,7 @@ using GeoApp.Application.Model;
 
 namespace GeoApp.Infrastructure.Common;
 
-public static class LocationExtensions
+internal static class LocationExtensions
 {
     private const int CountryFieldOffset = 0;
     private const int CountryFieldLength = 8;
@@ -19,7 +19,7 @@ public static class LocationExtensions
     private const int LatitudeFieldOffset = 88;
     private const int LongitudeFieldOffset = 92;
     
-    public static Location ReadLocation(ReadOnlySpan<byte> span)
+    public static Location ReadLocation(this ReadOnlySpan<byte> span)
     {
         var country = Encoding.ASCII.GetString(span.Slice(CountryFieldOffset, CountryFieldLength).TrimNullBytes());
         var region = Encoding.ASCII.GetString(span.Slice(RegionFieldOffset, RegionFieldLength).TrimNullBytes());

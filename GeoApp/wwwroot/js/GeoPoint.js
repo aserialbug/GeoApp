@@ -1,4 +1,4 @@
-class GeoPoint {
+export default class GeoPoint {
     constructor(latitude, longitude) {
         this.lat = latitude;
         this.long = longitude;

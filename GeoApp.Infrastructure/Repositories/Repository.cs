@@ -60,7 +60,7 @@ internal class Repository : IRepositoryQuery
             throw new  NotFoundException($"There are no IP ranges for address {address}");
 
         var range = _dataStorage.GetRangeByIndex(ipRangeIndex.Value);
-        var location = _dataStorage.GetLocationByIndex(range.LocationIndex);
+        var location = _dataStorage.GetLocationByIndex((int)range.LocationIndex);
         
         return Task.FromResult(new GeoPoint(location.Latitude, location.Longitude));
     }
@@ -122,7 +122,7 @@ internal class Repository : IRepositoryQuery
         return 0;
     }
 
-    public int CompareBytes(ReadOnlySpan<byte> val, ReadOnlySpan<byte> other)
+    private int CompareBytes(ReadOnlySpan<byte> val, ReadOnlySpan<byte> other)
     {
         var len = Math.Min(val.Length, other.Length);
         var idx = 0;

@@ -1,5 +1,11 @@
-import GeoAppClient from 'GeoAppClient';
+import GeoAppClient from "./GeoAppClient.js";
 
-let client = new GeoAppClient();
-let point = client.GetIpLocation("252.55.163.163");
-console.log(JSON.stringify(point));
+async function CallAPI() {
+    let client = new GeoAppClient();
+    let point = await client.GetIpLocation("252.55.163.163");
+    let locations = await client.GetCityLocations("cit_A Efoc")
+    console.log(point);
+    console.log(locations)
+}
+
+await CallAPI();
