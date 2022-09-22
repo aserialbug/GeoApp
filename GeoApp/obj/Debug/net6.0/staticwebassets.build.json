@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "IECDkg8xypW4/b36jiWiIXUovxddFZiCsnexcN5J9nc=",
+  "Source": "GeoApp",
+  "BasePath": "_content/GeoApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GeoApp\\wwwroot",
+      "Source": "GeoApp",
+      "ContentRoot": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\",
+      "BasePath": "_content/GeoApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\Index.html",
+      "SourceId": "GeoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\",
+      "BasePath": "_content/GeoApp",
+      "RelativePath": "Index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\js\\GeoAppClient.js",
+      "SourceId": "GeoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\",
+      "BasePath": "_content/GeoApp",
+      "RelativePath": "js/GeoAppClient.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\GeoAppClient.js"
+    },
+    {
+      "Identity": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\js\\main.js",
+      "SourceId": "GeoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\",
+      "BasePath": "_content/GeoApp",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\js\\Models.js",
+      "SourceId": "GeoApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Anton\\Documents\\Source\\GeoApp\\GeoApp\\wwwroot\\",
+      "BasePath": "_content/GeoApp",
+      "RelativePath": "js/Models.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Models.js"
+    }
+  ]
+}

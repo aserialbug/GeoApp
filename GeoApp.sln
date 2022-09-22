@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoApp", "GeoApp\GeoApp.csproj", "{D2E19F16-45FC-4357-9254-E7477ECA9128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoApp.Infrastructure", "GeoApp.Infrastructure\GeoApp.Infrastructure.csproj", "{66DFDE60-1076-48E6-953D-A092624D3B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoApp.Application", "GeoApp.Application\GeoApp.Application.csproj", "{9AA4AC8E-F1F0-4AED-96A6-CD66560CE991}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2E19F16-45FC-4357-9254-E7477ECA9128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E19F16-45FC-4357-9254-E7477ECA9128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E19F16-45FC-4357-9254-E7477ECA9128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E19F16-45FC-4357-9254-E7477ECA9128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DFDE60-1076-48E6-953D-A092624D3B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DFDE60-1076-48E6-953D-A092624D3B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DFDE60-1076-48E6-953D-A092624D3B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DFDE60-1076-48E6-953D-A092624D3B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA4AC8E-F1F0-4AED-96A6-CD66560CE991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA4AC8E-F1F0-4AED-96A6-CD66560CE991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA4AC8E-F1F0-4AED-96A6-CD66560CE991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA4AC8E-F1F0-4AED-96A6-CD66560CE991}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeoApp</name>
+    </assembly>
+    <members>
+        <member name="M:GeoApp.Controllers.IpController.Location(System.String)">
+            <summary>
+            Get user GEO coordinates by it's IP address
+            </summary>
+            <param name="ip">user's IP address</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
