@@ -7,37 +7,33 @@ public class Location : IEquatable<Location>
     public string Postal { get; }
     public string City { get; }
     public string Organization { get; }
-    public float Latitude { get; }
-    public float Longitude { get; }
-    
+    public GeoPoint Coordinates { get; }
+
     public Location(string country,
         string region,
         string postal,
         string city,
         string organization,
-        float latitude,
-        float longitude)
+        GeoPoint coordinates)
     {
         Country = country;
         Region = region;
         Postal = postal;
         City = city;
         Organization = organization;
-        Latitude = latitude;
-        Longitude = longitude;
+        Coordinates = coordinates;
     }
 
     public bool Equals(Location? other)
     {
         if (ReferenceEquals(null, other)) return false;
         if (ReferenceEquals(this, other)) return true;
-        return Country == other.Country && 
-               Region == other.Region && 
-               Postal == other.Postal && 
-               City == other.City && 
-               Organization == other.Organization && 
-               Latitude.Equals(other.Latitude) && 
-               Longitude.Equals(other.Longitude);
+        return Country == other.Country &&
+               Region == other.Region &&
+               Postal == other.Postal &&
+               City == other.City &&
+               Organization == other.Organization &&
+               Coordinates.Equals(other.Coordinates);
     }
 
     public override bool Equals(object? obj)
@@ -50,6 +46,6 @@ public class Location : IEquatable<Location>
 
     public override int GetHashCode()
     {
-        return HashCode.Combine(Country, Region, Postal, City, Organization, Latitude, Longitude);
+        return HashCode.Combine(Country, Region, Postal, City, Organization, Coordinates);
     }
 }

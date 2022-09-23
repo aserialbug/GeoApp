@@ -39,6 +39,6 @@ internal class Repository : IRepositoryQuery
         var range = _dataStorage.GetRangeByIndex(ipRangeIndex.Value);
         var location = _dataStorage.GetLocationByIndex((int)range.LocationIndex);
         
-        return Task.FromResult(new GeoPoint(location.Latitude, location.Longitude));
+        return Task.FromResult(location.Coordinates);
     }
 }

@@ -12,7 +12,6 @@ public static class LocationExtensions
             location.Postal, 
             location.City, 
             location.Organization, 
-            location.Latitude, 
-            location.Longitude);
+            location.Coordinates.ToViewModel());
     }
 }

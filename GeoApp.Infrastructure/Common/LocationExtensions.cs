@@ -29,6 +29,6 @@ internal static class LocationExtensions
         var lat = MemoryMarshal.Read<float>(span.Slice(LatitudeFieldOffset, sizeof(float)));
         var lon = MemoryMarshal.Read<float>(span.Slice(LongitudeFieldOffset, sizeof(float)));
 
-        return new Location(country, region, postal, city, org, lat, lon);
+        return new Location(country, region, postal, city, org, new GeoPoint(lat, lon));
     }
 }

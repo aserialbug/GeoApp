@@ -5,5 +5,4 @@ public record LocationViewModel(
     string Postal,
     string City,
     string Organization,
-    float Latitude,
-    float Longitude);
+    CoordinatesViewModel Cooordinates);
